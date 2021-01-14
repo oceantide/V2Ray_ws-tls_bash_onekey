@@ -11,7 +11,7 @@ cd "$(
 #	Author:	oceantide
 #	Dscription: V2ray ws+tls onekey Management
 #	Version: 1.0
-#	email:admin@iceocean.tk
+#	email:admin@oceantide.com
 #	Official document: www.v2ray.com
 #====================================================
 
@@ -423,7 +423,7 @@ ssl_install() {
     judge "安装 SSL 证书生成脚本"
 }
 domain_check() {
-    read -rp "请输入你的域名信息(eg:www.iceocean.tk):" domain
+    read -rp "请输入你的域名信息(eg:www.oceantide.com):" domain
     domain_ip=$(ping "${domain}" -c 1 | sed '1{s/[^(]*(//;s/).*//;q}')
     echo -e "${OK} ${GreenBG} 正在获取 公网ip 信息，请耐心等待 ${Font}"
     local_ip=$(curl https://api-ipv4.ip.sb/ip)

@@ -1,7 +1,6 @@
 ## V2Ray 基于 Nginx 的 vmess+ws+tls 一键安装脚本
 
 > 感谢 JetBrains 提供的非商业开源软件开发授权
-> 感谢 wulabing 再次分享源码
 
 > Thanks for non-commercial open source development authorization by JetBrains
 ### Telegram 群组
@@ -90,7 +89,7 @@ Nginx 目录： `/etc/nginx`
 
 目前支持通过 MugglePay 接受虚拟货币捐赠
 
-oceantide 邀请您使用麻瓜宝，基于Telegram的电子钱包，匿名支付0手续费秒级到账。https://telegram.me/MugglePayBot?start=V9TV76FJ
+𝒘𝒖𝒍𝒂𝒃𝒊𝒏𝒈 邀请您使用麻瓜宝，基于Telegram的电子钱包，匿名支付0手续费秒级到账。https://telegram.me/MugglePayBot?start=T3Y78AZ3
 
 您可以通过Telegram向我匿名捐赠：发送 /pay @oceantide xxx  到 @MugglePayBot 即可 默认货币为 USDT 
 
