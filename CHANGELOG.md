@@ -1,5 +1,5 @@
 ## 2020-06-11
-* 从 v2ray 切换至 oceantide
+* 从 v2ray 切换至 v2fly
 * mtproxy 安装下线
 
 ## 2020-6-5

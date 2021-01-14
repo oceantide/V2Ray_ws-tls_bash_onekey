@@ -4,13 +4,13 @@
 # https://wiki.linuxfoundation.org/lsb/fhs
 
 # The URL of the script project is:
-# https://github.com/oceantide/fhs-install-v2ray
+# https://github.com/v2fly/fhs-install-v2ray
 
 # The URL of the script is:
-# https://raw.githubusercontent.com/oceantide/fhs-install-v2ray/master/install-release.sh
+# https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
 
 # If the script executes incorrectly, go to:
-# https://github.com/oceantide/fhs-install-v2ray/issues
+# https://github.com/v2fly/fhs-install-v2ray/issues
 
 # If you modify the following variables, you also need to modify the unit file yourself:
 # You can modify it to /usr/local/lib/v2ray/
@@ -254,7 +254,7 @@ get_version() {
         TMP_FILE="$(mktemp)"
         install_software curl
         # DO NOT QUOTE THESE `${PROXY}` VARIABLES!
-        if ! curl ${PROXY} -o "$TMP_FILE" 'https://api.github.com/repos/oceantide/v2ray-core/releases/latest'; then
+        if ! curl ${PROXY} -o "$TMP_FILE" 'https://api.github.com/repos/v2fly/v2ray-core/releases/latest'; then
             rm "$TMP_FILE"
             echo 'error: Failed to get release list, please check your network.'
             exit 1
@@ -300,7 +300,7 @@ get_version() {
 
 download_v2ray() {
     mkdir "$TMP_DIRECTORY"
-    DOWNLOAD_LINK="https://github.com/oceantide/v2ray-core/releases/download/$RELEASE_VERSION/v2ray-linux-$MACHINE.zip"
+    DOWNLOAD_LINK="https://github.com/v2fly/v2ray-core/releases/download/$RELEASE_VERSION/v2ray-linux-$MACHINE.zip"
     echo "Downloading V2Ray archive: $DOWNLOAD_LINK"
     if ! curl ${PROXY} -L -H 'Cache-Control: no-cache' -o "$ZIP_FILE" "$DOWNLOAD_LINK"; then
         echo 'error: Download failed! Please check your network or try again.'
